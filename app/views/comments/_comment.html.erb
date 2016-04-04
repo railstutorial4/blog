@@ -1,0 +1,4 @@
+<p>
+  <%= comment.commenter %> said: <%= comment.body %>
+  <%= link_to 'Destroy', article_comment_path(@article.id, comment.id), method: :delete, data: { confirm: 'Are you sure?'} %>
+</p>
